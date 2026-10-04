@@ -1,81 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishan Karki Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Nishan Karki</h1>
+    <header>
+        <div class="header-content">
+            <h1>Nishan Karki</h1>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
+    <main>
 
-<section id="about">
-    <h2>About Me</h2>
-    <img src="profile.jpeg" alt="Nishan Karki profile photo" width="150">
-    <p>I am a Software Engineering student interested in web development.</p>
-</section>
+        <section id="about">
+            <div class="about-content">
 
-<section id="skills">
-    <h2>Skills</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Web page structure</dd>
-        <dt>CSS</dt>
-        <dd>Web page design</dd>
-        <dt>JavaScript</dt>
-        <dd>Web page interaction</dd>
-    </dl>
-</section>
+                <img src="assets/profile.jpeg" alt="Nishan Karki profile photo">
 
-<section id="projects">
-    <h2>Projects</h2>
-    <article>
-        <h3>Portfolio Website</h3>
-        <p>My personal portfolio website.</p>
-    </article>
-    <article>
-        <h3>Flood Watch</h3>
-        <p>A project related to flood information.</p>
-    </article>
-</section>
-<section id="contact">
-    <h2>Contact</h2>
+                <div class="about-text">
+                    <h2>About Me</h2>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name">
+                    <p>
+                        I am a Software Engineering student interested in web development.
+                        I enjoy learning how websites are designed and developed using
+                        modern web technologies.
+                    </p>
 
-        <br><br>
+                    <p>
+                        I am currently developing my skills in HTML, CSS, and JavaScript
+                        while working on different academic and personal projects.
+                    </p>
+                </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email">
+            </div>
+        </section>
 
-        <br><br>
 
-        <label for="message">Message:</label>
-        <textarea id="message"></textarea>
+        <section id="skills">
 
-        <br><br>
+            <h2>Skills</h2>
 
-        <button type="submit">Submit</button>
-    </form>
-</section>
-</main>
-<footer>
-    <p>© 2026 Nishan Karki</p>
-</footer>
+            <dl class="skills-list">
+
+                <div class="skill-item">
+                    <dt>HTML</dt>
+                    <dd>Creating structured and semantic web pages.</dd>
+                </div>
+
+                <div class="skill-item">
+                    <dt>CSS</dt>
+                    <dd>Designing responsive and visually appealing web pages.</dd>
+                </div>
+
+                <div class="skill-item">
+                    <dt>JavaScript</dt>
+                    <dd>Adding interaction and functionality to websites.</dd>
+                </div>
+
+            </dl>
+
+        </section>
+
+
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="project-container">
+
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        A personal portfolio website created to present my
+                        background, skills, and projects using HTML and CSS.
+                    </p>
+                </article>
+
+
+                <article class="project-card">
+                    <h3>Flood Watch</h3>
+
+                    <p>
+                        A project related to flood information that focuses
+                        on presenting useful information to users.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Nishan Karki</p>
+    </footer>
+
 </body>
+
 </html>
